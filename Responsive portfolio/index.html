@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('images/background2.jpg');
+            background-size: cover;
+            color: white;
+
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+           
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+           
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+           
+            color: black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 15px;
+            padding: 10px;
+        }
+
+        .card {
+            background-color: #3333; 
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            transition: 0.3s;
+           
+            text-align: left;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer {
+          
+            padding: 10px;
+            text-align: center;
+        }
+
+        .social-media {
+           
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: white;
+            margin: 0 5px;
+            font-size: 24px;
+        }
+
+        .social-media a:hover {
+            color: #191919;
+        }
+
+        .aboutme,
+        .mywork,
+        .projects,
+        .contactme {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Portfolio Website</h1>
+    </header>
+
+    <nav>
+        <a href="#aboutme"><b>About Me</b></a>
+        <a href="#mywork"><b>My Work</b></a>
+        <a href="#projects"><b>Projects</b></a>
+        <a href="#contactme"><b>Contact Me</b></a>
+    </nav>
+
+    <div class="container">
+        <div class="card aboutme">
+            <h2>About Me</h2>
+            <p>Greetings! I'm Anil Kumar, an ambitious web developer intern dedicated to creating digital experiences that resonate. Fluent in HTML, CSS, and JavaScript, I specialize in seamlessly translating concepts into captivating, user-centric websites.Embracing the ever-evolving world of web development, I am committed to both form and function, ensuring every project makes a lasting impact.</p>
+        </div>
+
+        <div class="card mywork">
+            <h2>My Work</h2>
+            <p><b>Netflix Clone:</b> Crafted a dynamic and visually engaging Netflix clone, showcasing proficiency in front-end technologies such as React.js.</p>
+            <p><b>Personal Portfolio:</b> Transformed a personal portfolio website with a focus on modern design principles and interactivity using JavaScript.</p>
+            <p><b>Interactive Quiz Game:</b> Engineered an engaging quiz game application with HTML, CSS, and JavaScript, showcasing creativity in design and coding.</p>
+        </div>
+
+        <div class="card projects">
+            <h2>Projects</h2>
+            <p><b>1.Netflix Clone</b><p>
+            <p><b>2.Music Player</b></p>
+            <p><b>3.Responsive Portfolio</b></p>
+            <p><b>4.Text Editor</b></p>
+            <p><b>5.Expense Tracker</b></p>        
+            <p><b>6.Language Translator</b></p>   
+        </div>
+
+        <div class="card contactme">
+            <h2>Contact Me</h2>
+            <p><b>Gmail:</b>1234@gmail.com.</p>
+            <p><b>LinkedIn:</b>User_1234</p>
+            <p><b>GitHub:</b>User_1234</p>
+            <p><b>Phone Number:</b>1234567899</p>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <a href="https://www.instagram.com/my_instagram_id/">Instagram</a>
+        <a href="https://www.facebook.com/my_facebook_id/">Facebook</a>
+        <a href="https://github.com/my_github_id">GitHub</a>
+    </div>
+
+    <div class="footer">
+        <P>DEVELOPED BY ANIL KUMAR</P>
+    </div>
+</body>
+</html>
